@@ -1,0 +1,24 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "com.seibel.distanthorizons.forge.mixins",
+    "mixins": [
+        "server.unsafe.MixinThreadingDetector",
+        "server.MixinUtilBackgroundThread",
+        "server.MixinChunkGenerator",
+        "server.MixinTFChunkGenerator"
+    ],
+    "client": [
+        "client.MixinClientPacketListener",
+        "client.MixinDebugScreenOverlay",
+        "client.MixinFogRenderer",
+        "client.MixinGameRenderer",
+        "client.MixinLevelRenderer",
+        "client.MixinDynamicTexture",
+        "client.MixinLightTexture",
+        "client.MixinOptionsScreen",
+        "client.MixinTextureUtil"
+    ],
+    "server": [],
+    "plugin": "com.seibel.distanthorizons.forge.mixins.ForgeMixinPlugin"
+}
